@@ -27,21 +27,19 @@ int main(){
  		printf("Quiere usar su celular? marque 1\nQuiere cargarlo? marque 2\nQuiere salir del menu? marque 3\n");
  		scanf("%i", &opcion_seleccionada);
  	 		switch (opcion_seleccionada){
- 			case 1: 
- 				printf("Usted hizo uso de su celular\n");
- 				bateria_actual= bateria_actual- USAR_EL_CELU_GASTA;
- 			case 2:
- 				printf("Usted optó por cargar el celular\n");
- 				bateria_actual= bateria_actual + CARGAR_EL_CELU_CARGA;
- 			case 3:
- 				printf("Hasta Luego!\n");
- 				return 0;
- 			}
+ 				case 1: 
+ 					printf("Usted hizo uso de su celular\n");
+ 					bateria_actual= bateria_actual- USAR_EL_CELU_GASTA;
+ 				case 2:
+ 					printf("Usted optó por cargar el celular\n");
+ 					bateria_actual= bateria_actual + CARGAR_EL_CELU_CARGA;
+ 				case 3:
+ 					printf("Hasta Luego!\n");
+ 					return 0;
+			}
  	}
 
  }
-
-
     
     return 0; 
 }
