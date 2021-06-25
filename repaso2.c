@@ -23,18 +23,20 @@ int main(){
  }else {
  	bateria_actual= bateria_actual- USAR_EL_CELU_GASTA;
  	while (bateria_actual>SE_APAGA){
- 		printf("Su bateria es de %i\n", bateria_actual);
+ 		printf("Su bateria es de %i\n\n\n", bateria_actual);
  		printf("Quiere usar su celular? marque 1\nQuiere cargarlo? marque 2\nQuiere salir del menu? marque 3\n");
  		scanf("%i", &opcion_seleccionada);
  	 		switch (opcion_seleccionada){
  				case 1: 
  					printf("Usted hizo uso de su celular\n");
  					bateria_actual= bateria_actual- USAR_EL_CELU_GASTA;
+ 					break;
  				case 2:
  					printf("Usted optó por cargar el celular\n");
  					bateria_actual= bateria_actual + CARGAR_EL_CELU_CARGA;
+ 					break;
  				case 3:
- 					printf("Hasta Luego!\n");
+					printf("Hasta Luego!\n");
  					return 0;
 			}
  	}
