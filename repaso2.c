@@ -33,7 +33,12 @@ int main(){
  					break;
  				case 2:
  					printf("Usted optó por cargar el celular\n");
- 					bateria_actual= bateria_actual + CARGAR_EL_CELU_CARGA;
+ 					if (bateria_actual<= (BATERIA_INICIAL- CARGAR_EL_CELU_CARGA)){
+ 						bateria_actual= bateria_actual + CARGAR_EL_CELU_CARGA;
+ 					}else{
+ 						printf("Su batería ya está cargada\n");
+
+ 					}
  					break;
  				case 3:
 					printf("Hasta Luego!\n");
